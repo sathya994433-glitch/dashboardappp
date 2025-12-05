@@ -11,7 +11,7 @@ def main():
     # 1. Load Data
     # For Streamlit deployment, ensure the CSV is accessible. Assuming it's in the same directory.
     try:
-        df = pd.read_csv('/content/pizza_sales.csv')
+        df = pd.read_csv('pizza_sales.csv')
     except FileNotFoundError:
         st.error("Error: 'pizza_sales.csv' not found. Please ensure the file is in the correct directory.")
         return
